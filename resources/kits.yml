@@ -1,77 +1,130 @@
 ---
-testkit:
-  # ITEM FORMAT: "id:damage:count:name:ench_name:ench_level"
-  # NO enchantments and NO custom name: "id:damage:count"
-
-  # ONLY custom name: "id:damage:count:custom name"
-
-  # ONLY enchantments: "id:damage:count:DEFAULT:enchantment1:level"
-  # (Put DEFAULT in the name field if you do not want a custom name)
-  # You can put as many enchantments as you want like this: "id:damage:count:DEFAULT:enchantment1:level:enchantment2:level" etc.
-
-  # Enchantments AND custom name: "id:damage:count:custom name:enchantment1:level"
-  # You can put as many enchantments as you want like this: "id:damage:count:custom name:enchantment1:level:enchantment2:level" etc.
-
-  # You can write both numeric or string IDs
+Starter:
   items:
-  - "260:0:10"
-  - "267:0:1:Sword Name"
-  helmet: "diamond_helmet:0:1"
-  chestplate: "diamond_chestplate:0:1:DEFAULT:protection:1"
-  leggings: "diamond_leggings:0:1:Leggings Name"
-  boots: "diamond_boots:0:1"
-
-  # Set items for specific slots, will override existing items. Only use if you want to assign items to specific slots, otherwise delete this.
-  slots:
-    9: "golden_apple:0:5"
-    12: "bow:0:1"
+  - "276:0:1:§fDiamond Sword"
+  - "278:0:1:§fDiamond Pickaxe"
+  - "279:0:1:§fDiamond Axe"
+  - "277:0:1:§fDiamond Shovel"
+  - "368:0:3"
+  - "466:0:3"
+  - "7:0:3"
+  - "364:0:3"
+  helmet: "310:0:1:§fDiamond Helmet"
+  chestplate: "311:0:1:§fDiamond Chestplate"
+  leggings: "312:0:1:§fDiamond Leggings"
+  boots: "313:0:1:§fDiamond Boots"
 
   commands:
-  - "tell {player} you got an awesome kit thanks to AdvancedKits plugin!"
-
-  cooldown:
-    hours: 24
-    minutes: 30
-
-  # EFFECT FORMAT: "name:seconds:amplifier"
-  effects:
-  - "speed:120:2"
-
-  # Add a cost for the kit. Compatible with EconomyAPI, PocketMoney and MassiveEconomy
-  # Put 0 if you want the kit to be free
-  money: 50
-
-  # If you do not use pureperms, use 'worlds' to specify in which worlds you want this kit to be used
-  # Leave blank to let use the kit in all worlds
-  worlds:
-  - "kitpvp"
-
-  # If you do not use pureperms, use 'users' to specify which players will be able to get this kit
-  # Leave blank to let all the players use this kit
-  users:
-  - "luca28pet"
-  - "dioconsole"
-
-  # FormAPI users:
-  # Img type: 'url' or 'path'
-  img-type: ''
-  # Put here the image URL/path
-  img-data: ''
-  # How the kit is displayed on the form
-  form-name: 'Test Kit: 50$'
-
-sgkit:
-  items:
-  - 'bow:0:1'
-  - 'arrow:0:5'
-  - 'stone_sword:0:1'
-  - 'apple:0:5'
-  helmet: 'leather_cap:0:1'
-  chestplate: 'leather_tunic:0:1'
-  commands:
-  - 'tell {player} You got a SG example kit'
+  - "tell {player} §aClaimed The Kit Successfully"
+  
   cooldown:
     hours: 1
     minutes: 0
-  money: 0
+
+  # Format: "name:time:amplifier"
+  # Time is in seconds
+  effects:
+
+  # If you do not use pureperms, use 'worlds' to specify in which worlds you want this kit to be used
+  worlds:
+  - "NONE"
+  # If you do not use pureperms, use 'users' to specify which players will be able to get this kit
+  users:
+  - ""
+Weekly:
+  items:
+  - "276:0:1:§fDiamond Sword:sharpness:1:looting:1:unbreaking:1"
+  - "278:0:1:§fDiamond Pickaxe:efficiency:1:fortune:1:unbreaking:1"
+  - "279:0:1:§fDiamond Axe:efficiency:1:fortune:1:unbreaking:1:sharpness:1"
+  - "277:0:1:§fDiamond Shovel:efficiency:1:fortune:1:unbreaking:1"
+  - "368:0:6"
+  - "466:0:6"
+  - "7:0:6"
+  - "364:0:6"
+  helmet: "310:0:1:§fDiamond Helmet:protection:1:unbreaking:1"
+  chestplate: "311:0:1:§fDiamond Chestplate:protection:1:unbreaking:1"
+  leggings: "312:0:1:§fDiamond Leggings:protection:1:unbreaking:1"
+  boots: "313:0:1:§fDiamond Boots:protection:1:unbreaking:1"
+  
+  commands:
+  - "tell {player} §aClaimed The Kit Successfully"
+  
+  cooldown:
+    hours: 168
+    minutes: 0
+
+  # Format: "name:time:amplifier"
+  # Time is in seconds
+  effects:
+
+  # If you do not use pureperms, use 'worlds' to specify in which worlds you want this kit to be used
+  worlds:
+  - "NONE"
+  # If you do not use pureperms, use 'users' to specify which players will be able to get this kit
+  users:
+  - ""
+Monthly:
+  items:
+  - "276:0:1:§fDiamond Sword:sharpness:2:looting:2:unbreaking:2"
+  - "278:0:1:§fDiamond Pickaxe:efficiency:2:fortune:2:unbreaking:2"
+  - "279:0:1:§fDiamond Axe:efficiency:2:fortune:2:unbreaking:2:sharpness:2"
+  - "277:0:1:§fDiamond Shovel:efficiency:2:fortune:2:unbreaking:2"
+  - "368:0:9"
+  - "466:0:9"
+  - "7:0:9"
+  - "364:0:9"
+  helmet: "310:0:1:§fDiamond Helmet:protection:2:unbreaking:2"
+  chestplate: "311:0:1:§fDiamond Chestplate:protection:2:unbreaking:2"
+  leggings: "312:0:1:§fDiamond Leggings:protection:2:unbreaking:2"
+  boots: "313:0:1:§fDiamond Boots:protection:2:unbreaking:2"
+  
+  commands:
+  - "tell {player} §aClaimed The Kit Successfully"
+  
+  cooldown:
+    hours: 730
+    minutes: 0
+
+  # Format: "name:time:amplifier"
+  # Time is in seconds
+  effects:
+
+  # If you do not use pureperms, use 'worlds' to specify in which worlds you want this kit to be used
+  worlds:
+  - "NONE"
+  # If you do not use pureperms, use 'users' to specify which players will be able to get this kit
+  users:
+  - ""
+Once:
+  items:
+  - "276:0:1:§fDiamond Sword:sharpness:3:looting:3:unbreaking:3"
+  - "278:0:1:§fDiamond Pickaxe:efficiency:3:fortune:3:unbreaking:3"
+  - "279:0:1:§fDiamond Axe:efficiency:3:fortune:3:unbreaking:3:sharpness:3"
+  - "277:0:1:§fDiamond Shovel:efficiency:3:fortune:3:unbreaking:3"
+  - "368:0:12"
+  - "466:0:12"
+  - "7:0:12"
+  - "364:0:12"
+  helmet: "310:0:1:§fDiamond Helmet:protection:3:unbreaking:3"
+  chestplate: "311:0:1:§fDiamond Chestplate:protection:3:unbreaking:3"
+  leggings: "312:0:1:§fDiamond Leggings:protection:3:unbreaking:3"
+  boots: "313:0:1:§fDiamond Boots:protection:3:unbreaking:3"
+  
+  commands:
+  - "tell {player} §aClaimed The Kit Successfully"
+  
+  cooldown:
+    hours: 1
+    minutes: 0
+
+  # Format: "name:time:amplifier"
+  # Time is in seconds
+  effects:
+
+  # If you do not use pureperms, use 'worlds' to specify in which worlds you want this kit to be used
+  worlds:
+  - "NONE"
+  # If you do not use pureperms, use 'users' to specify which players will be able to get this kit
+  users:
+  - ""
 ...
